@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Runtime Compatibility Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .controls {
+            background: #2d2d3a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+
+        .btn:disabled {
+            background: #666;
+            cursor: not-allowed;
+        }
+
+        .btn-danger {
+            background: #f44336;
+        }
+
+        .btn-danger:hover {
+            background: #da190b;
+        }
+
+        .btn-info {
+            background: #2196F3;
+        }
+
+        .btn-info:hover {
+            background: #0b7dda;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: #2d2d3a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .success { color: #4CAF50; }
+        .failed { color: #f44336; }
+        .testing { color: #FFC107; }
+        .pending { color: #888; }
+
+        .progress-bar-container {
+            background: #1a1a2e;
+            border-radius: 10px;
+            height: 30px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #45a049);
+            transition: width 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .model-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .model-card {
+            background: #2d2d3a;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #888;
+            transition: all 0.3s;
+        }
+
+        .model-card.testing {
+            border-left-color: #FFC107;
+            box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+        }
+
+        .model-card.success {
+            border-left-color: #4CAF50;
+        }
+
+        .model-card.failed {
+            border-left-color: #f44336;
+        }
+
+        .model-name {
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .model-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .status-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .status-icon.pending { background: #888; }
+        .status-icon.testing { background: #FFC107; animation: pulse 1s infinite; }
+        .status-icon.success { background: #4CAF50; }
+        .status-icon.failed { background: #f44336; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .model-details {
+            font-size: 0.9em;
+            color: #aaa;
+            margin-top: 8px;
+        }
+
+        .error-message {
+            color: #f44336;
+            font-size: 0.85em;
+            margin-top: 8px;
+            padding: 8px;
+            background: rgba(244, 67, 54, 0.1);
+            border-radius: 4px;
+            max-height: 100px;
+            overflow-y: auto;
+        }
+
+        .response-preview {
+            color: #4CAF50;
+            font-size: 0.85em;
+            margin-top: 8px;
+            padding: 8px;
+            background: rgba(76, 175, 80, 0.1);
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .export-section {
+            background: #2d2d3a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .export-section h3 {
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+
+        .export-section pre {
+            background: #1a1a2e;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            max-height: 400px;
+            font-size: 0.85em;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #888;
+            border-top-color: #4CAF50;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Model Runtime Compatibility Test</h1>
+        <p class="subtitle">Systematic testing of all 61 Xenova models for browser compatibility</p>
+
+        <div class="controls">
+            <button id="startBtn" class="btn" onclick="startTesting()">▶ Start Testing</button>
+            <button id="pauseBtn" class="btn btn-danger" onclick="pauseTesting()" disabled>⏸ Pause</button>
+            <button id="exportBtn" class="btn btn-info" onclick="exportResults()">📥 Export Results</button>
+            <button id="clearBtn" class="btn" onclick="clearCache()">🧹 Clear Cache</button>
+            <label style="color: #aaa; display: flex; align-items: center; gap: 8px;">
+                <input type="checkbox" id="skipFailedCheckbox" checked>
+                Continue on failure
+            </label>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value testing" id="testedCount">0</div>
+                <div class="stat-label">Tested</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value success" id="successCount">0</div>
+                <div class="stat-label">Success</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value failed" id="failedCount">0</div>
+                <div class="stat-label">Failed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value pending" id="pendingCount">61</div>
+                <div class="stat-label">Remaining</div>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar" style="width: 0%">0%</div>
+        </div>
+
+        <div id="currentTestInfo" style="text-align: center; margin-bottom: 20px; color: #FFC107; font-size: 1.2em;"></div>
+
+        <div class="model-grid" id="modelGrid"></div>
+
+        <div class="export-section">
+            <h3>📊 Test Results (JSON)</h3>
+            <pre id="resultsJson">Results will appear here after testing...</pre>
+        </div>
+    </div>
+
+    <script type="module">
+        import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@latest';
+
+        // Configure Transformers.js
+        env.allowLocalModels = false;
+        env.allowRemoteModels = true;
+
+        const models = [
+            // Ultra Fast
+            { id: 'Xenova/pythia-14m', category: 'Ultra Fast' },
+            { id: 'Xenova/llama2.c-stories15M', category: 'Ultra Fast' },
+            { id: 'Xenova/distilgpt2', category: 'Ultra Fast' },
+            { id: 'Xenova/llama2.c-stories110M', category: 'Ultra Fast' },
+
+            // Chat Optimized
+            { id: 'Xenova/Qwen1.5-0.5B-Chat', category: 'Chat' },
+            { id: 'Xenova/TinyLlama-1.1B-Chat-v1.0', category: 'Chat' },
+            { id: 'Xenova/Qwen1.5-1.8B-Chat', category: 'Chat' },
+
+            // LaMini Family
+            { id: 'Xenova/LaMini-GPT-124M', category: 'LaMini' },
+            { id: 'Xenova/LaMini-Neo-125M', category: 'LaMini' },
+            { id: 'Xenova/LaMini-Cerebras-256M', category: 'LaMini' },
+            { id: 'Xenova/LaMini-GPT-774M', category: 'LaMini' },
+            { id: 'Xenova/LaMini-Cerebras-111M', category: 'LaMini' },
+            { id: 'Xenova/LaMini-Cerebras-590M', category: 'LaMini' },
+
+            // General Purpose
+            { id: 'Xenova/gpt-neo-125M', category: 'General' },
+            { id: 'Xenova/gpt2', category: 'General' },
+            { id: 'Xenova/llama-160m', category: 'General' },
+            { id: 'Xenova/stablelm-2-zephyr-1_6b', category: 'General' },
+
+            // Code Generation
+            { id: 'Xenova/codegen-350M-mono', category: 'Code' },
+            { id: 'Xenova/tiny_starcoder_py', category: 'Code' },
+            { id: 'Xenova/WizardCoder-1B-V1.0', category: 'Code' },
+            { id: 'Xenova/deepseek-coder-1.3b-instruct', category: 'Code' },
+            { id: 'Xenova/codegen-350M-multi', category: 'Code' },
+            { id: 'Xenova/codegen-350M-nl', category: 'Code' },
+            { id: 'Xenova/starcoderbase-1b', category: 'Code' },
+            { id: 'Xenova/starcoderbase-1b-sft', category: 'Code' },
+            { id: 'Xenova/deepseek-coder-1.3b-base', category: 'Code' },
+
+            // OPT
+            { id: 'Xenova/opt-125m', category: 'OPT' },
+            { id: 'Xenova/opt-350m', category: 'OPT' },
+
+            // Pythia
+            { id: 'Xenova/pythia-410m', category: 'Pythia' },
+            { id: 'Xenova/pythia-31m', category: 'Pythia' },
+            { id: 'Xenova/pythia-70m', category: 'Pythia' },
+            { id: 'Xenova/pythia-70m-deduped', category: 'Pythia' },
+            { id: 'Xenova/pythia-160m', category: 'Pythia' },
+            { id: 'Xenova/pythia-160m-deduped', category: 'Pythia' },
+            { id: 'Xenova/pythia-410m-deduped', category: 'Pythia' },
+
+            // Multilingual
+            { id: 'Xenova/bloomz-560m', category: 'Multilingual' },
+            { id: 'Xenova/bloom-560m', category: 'Multilingual' },
+            { id: 'Xenova/phi-1_5_dev', category: 'Multilingual' },
+            { id: 'Xenova/pygmalion-350m', category: 'Multilingual' },
+            { id: 'Xenova/gpt2-large-conversational', category: 'Multilingual' },
+
+            // Language-Specific
+            { id: 'Xenova/slovak-gpt-j-405M', category: 'Language-Specific' },
+            { id: 'Xenova/gpt-neo-romanian-125m', category: 'Language-Specific' },
+            { id: 'Xenova/kogpt-j-350m', category: 'Language-Specific' },
+            { id: 'Xenova/tamillama_tiny_30m', category: 'Language-Specific' },
+            { id: 'Xenova/J-350M', category: 'Language-Specific' },
+
+            // Extended Story
+            { id: 'Xenova/llama2.c-stories42M', category: 'Story' },
+            { id: 'Xenova/llama-68m', category: 'Story' },
+
+            // Falcon
+            { id: 'Xenova/falcon-rw-1b', category: 'Falcon' },
+            { id: 'Xenova/tiny-random-falcon-7b', category: 'Falcon' },
+            { id: 'Xenova/really-tiny-falcon-testing', category: 'Falcon' },
+
+            // Extended Llama
+            { id: 'Xenova/TinyLLama-v0', category: 'Llama' },
+            { id: 'Xenova/LiteLlama-460M-1T', category: 'Llama' },
+
+            // StableLM
+            { id: 'Xenova/stablelm-2-1_6b', category: 'StableLM' },
+            { id: 'Xenova/tiny-random-StableLmForCausalLM', category: 'StableLM' },
+
+            // Qwen
+            { id: 'Xenova/Qwen1.5-0.5B', category: 'Qwen' },
+            { id: 'Xenova/Qwen1.5-1.8B', category: 'Qwen' },
+
+            // Testing
+            { id: 'Xenova/tiny-random-mistral', category: 'Testing' },
+            { id: 'Xenova/tiny-random-PhiForCausalLM', category: 'Testing' },
+            { id: 'Xenova/tiny-random-Starcoder2ForCausalLM', category: 'Testing' },
+            { id: 'Xenova/ipt-350m', category: 'Other' },
+            { id: 'Xenova/dlite-v2-774m', category: 'Other' }
+        ];
+
+        let currentIndex = 0;
+        let isPaused = false;
+        let results = [];
+        let currentPipeline = null;
+
+        // Initialize grid
+        function initGrid() {
+            const grid = document.getElementById('modelGrid');
+            grid.innerHTML = models.map((model, index) => `
+                <div class="model-card pending" id="card-${index}">
+                    <div class="model-name">${model.id}</div>
+                    <div class="model-status">
+                        <div class="status-icon pending" id="icon-${index}"></div>
+                        <span id="status-${index}">Pending</span>
+                    </div>
+                    <div class="model-details">Category: ${model.category}</div>
+                    <div id="details-${index}"></div>
+                </div>
+            `).join('');
+        }
+
+        async function testModel(modelId, index) {
+            const card = document.getElementById(`card-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+            const status = document.getElementById(`status-${index}`);
+            const details = document.getElementById(`details-${index}`);
+            const currentInfo = document.getElementById('currentTestInfo');
+
+            try {
+                // Update UI
+                card.className = 'model-card testing';
+                icon.className = 'status-icon testing';
+                status.innerHTML = '<span class="loading-spinner"></span> Loading model...';
+                currentInfo.textContent = `🔄 Testing: ${modelId}`;
+
+                const startTime = Date.now();
+
+                // Load model
+                console.log(`Loading model: ${modelId}`);
+                currentPipeline = await pipeline('text-generation', modelId);
+
+                const loadTime = Date.now() - startTime;
+                status.textContent = 'Generating text...';
+
+                // Generate text
+                const result = await currentPipeline('Hello, this is a test.', {
+                    max_new_tokens: 20,
+                    temperature: 0.7,
+                    do_sample: true
+                });
+
+                const totalTime = Date.now() - startTime;
+                const responseText = result[0].generated_text;
+
+                // Success
+                card.className = 'model-card success';
+                icon.className = 'status-icon success';
+                status.innerHTML = `✅ Success (${(totalTime / 1000).toFixed(1)}s)`;
+                details.innerHTML = `
+                    <div class="model-details">Load: ${(loadTime / 1000).toFixed(1)}s | Generate: ${((totalTime - loadTime) / 1000).toFixed(1)}s</div>
+                    <div class="response-preview">"${responseText.substring(0, 100)}..."</div>
+                `;
+
+                results.push({
+                    model: modelId,
+                    category: models[index].category,
+                    status: 'SUCCESS',
+                    loadTime: loadTime,
+                    totalTime: totalTime,
+                    response: responseText
+                });
+
+                // Cleanup
+                if (currentPipeline && currentPipeline.dispose) {
+                    await currentPipeline.dispose();
+                }
+                currentPipeline = null;
+
+                return true;
+
+            } catch (error) {
+                console.error(`Error testing ${modelId}:`, error);
+
+                // Failed
+                card.className = 'model-card failed';
+                icon.className = 'status-icon failed';
+                status.textContent = '❌ Failed';
+                details.innerHTML = `<div class="error-message">${error.message}</div>`;
+
+                results.push({
+                    model: modelId,
+                    category: models[index].category,
+                    status: 'FAILED',
+                    error: error.message,
+                    errorStack: error.stack
+                });
+
+                // Cleanup
+                if (currentPipeline && currentPipeline.dispose) {
+                    try {
+                        await currentPipeline.dispose();
+                    } catch (e) {
+                        console.error('Error disposing pipeline:', e);
+                    }
+                }
+                currentPipeline = null;
+
+                return false;
+            }
+        }
+
+        async function runTests() {
+            const skipOnFailure = document.getElementById('skipFailedCheckbox').checked;
+
+            for (let i = currentIndex; i < models.length; i++) {
+                if (isPaused) {
+                    currentIndex = i;
+                    return;
+                }
+
+                currentIndex = i;
+                const success = await testModel(models[i].id, i);
+
+                // Update stats
+                updateStats();
+
+                if (!success && !skipOnFailure) {
+                    console.log('Test failed, pausing...');
+                    pauseTesting();
+                    return;
+                }
+
+                // Small delay between tests
+                await new Promise(resolve => setTimeout(resolve, 1000));
+            }
+
+            // All done
+            document.getElementById('currentTestInfo').innerHTML = '✅ All tests completed!';
+            document.getElementById('startBtn').disabled = false;
+            document.getElementById('pauseBtn').disabled = true;
+            document.getElementById('startBtn').textContent = '🔄 Restart Testing';
+
+            // Auto-export results
+            exportResults();
+        }
+
+        function updateStats() {
+            const tested = results.length;
+            const success = results.filter(r => r.status === 'SUCCESS').length;
+            const failed = results.filter(r => r.status === 'FAILED').length;
+            const pending = models.length - tested;
+
+            document.getElementById('testedCount').textContent = tested;
+            document.getElementById('successCount').textContent = success;
+            document.getElementById('failedCount').textContent = failed;
+            document.getElementById('pendingCount').textContent = pending;
+
+            const progress = (tested / models.length * 100).toFixed(0);
+            const progressBar = document.getElementById('progressBar');
+            progressBar.style.width = progress + '%';
+            progressBar.textContent = progress + '%';
+        }
+
+        window.startTesting = function() {
+            if (currentIndex >= models.length) {
+                // Restart
+                currentIndex = 0;
+                results = [];
+                initGrid();
+                updateStats();
+            }
+
+            isPaused = false;
+            document.getElementById('startBtn').disabled = true;
+            document.getElementById('pauseBtn').disabled = false;
+            runTests();
+        };
+
+        window.pauseTesting = function() {
+            isPaused = true;
+            document.getElementById('startBtn').disabled = false;
+            document.getElementById('pauseBtn').disabled = true;
+            document.getElementById('startBtn').textContent = '▶ Resume Testing';
+            document.getElementById('currentTestInfo').textContent = '⏸ Testing paused';
+        };
+
+        window.exportResults = function() {
+            const summary = {
+                timestamp: new Date().toISOString(),
+                totalModels: models.length,
+                tested: results.length,
+                successful: results.filter(r => r.status === 'SUCCESS').length,
+                failed: results.filter(r => r.status === 'FAILED').length,
+                successRate: ((results.filter(r => r.status === 'SUCCESS').length / results.length) * 100).toFixed(1) + '%',
+                results: results
+            };
+
+            document.getElementById('resultsJson').textContent = JSON.stringify(summary, null, 2);
+
+            // Download as file
+            const blob = new Blob([JSON.stringify(summary, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `model-test-results-${Date.now()}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        };
+
+        window.clearCache = async function() {
+            if (confirm('Clear all browser cache? This will remove downloaded models.')) {
+                localStorage.clear();
+                sessionStorage.clear();
+                if ('caches' in window) {
+                    const cacheNames = await caches.keys();
+                    await Promise.all(cacheNames.map(name => caches.delete(name)));
+                }
+                alert('Cache cleared! Reload the page to start fresh.');
+            }
+        };
+
+        // Initialize on load
+        initGrid();
+        updateStats();
+    </script>
+</body>
+</html>

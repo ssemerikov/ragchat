@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Model Test</title>
+    <style>
+        body {
+            font-family: monospace;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        #result { margin-top: 20px; padding: 10px; border: 1px solid #ccc; }
+        .success { background-color: #d4edda; }
+        .error { background-color: #f8d7da; }
+        #modelName { width: 400px; }
+        button { padding: 10px 20px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Single Model Runtime Test</h1>
+
+    <div>
+        <label>Model Name:</label><br>
+        <input type="text" id="modelName" placeholder="Xenova/distilgpt2">
+    </div>
+
+    <button id="startTest">Start Test</button>
+
+    <div id="result"></div>
+    <div id="loadTime"></div>
+    <div id="generateTime"></div>
+    <div id="output"></div>
+
+    <script type="module">
+        import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@latest';
+
+        const modelNameInput = document.getElementById('modelName');
+        const startTestBtn = document.getElementById('startTest');
+        const resultDiv = document.getElementById('result');
+        const loadTimeDiv = document.getElementById('loadTime');
+        const generateTimeDiv = document.getElementById('generateTime');
+        const outputDiv = document.getElementById('output');
+
+        startTestBtn.addEventListener('click', async () => {
+            const modelName = modelNameInput.value.trim();
+            if (!modelName) {
+                resultDiv.textContent = 'ERROR: Please enter a model name';
+                resultDiv.className = 'error';
+                return;
+            }
+
+            console.log(`[TEST START] Model: ${modelName}`);
+            resultDiv.textContent = 'Testing...';
+            resultDiv.className = '';
+            loadTimeDiv.textContent = '';
+            generateTimeDiv.textContent = '';
+            outputDiv.textContent = '';
+
+            const startTotal = Date.now();
+
+            try {
+                // Test: Load model
+                console.log('[LOADING] Starting model load...');
+                const loadStart = Date.now();
+
+                const generator = await pipeline(
+                    'text-generation',
+                    modelName,
+                    {
+                        progress_callback: (progress) => {
+                            if (progress.status === 'progress') {
+                                console.log(`[PROGRESS] ${progress.file}: ${Math.round(progress.progress)}%`);
+                            }
+                        }
+                    }
+                );
+
+                const loadEnd = Date.now();
+                const loadTime = ((loadEnd - loadStart) / 1000).toFixed(1);
+                console.log(`[LOADED] Model loaded in ${loadTime}s`);
+                loadTimeDiv.textContent = `${loadTime}s`;
+
+                // Test: Generate text
+                console.log('[GENERATING] Starting text generation...');
+                const genStart = Date.now();
+
+                const result = await generator('Hello, this is a test.', {
+                    max_new_tokens: 20,
+                    temperature: 0.7,
+                    do_sample: true
+                });
+
+                const genEnd = Date.now();
+                const genTime = ((genEnd - genStart) / 1000).toFixed(1);
+                console.log(`[GENERATED] Generated in ${genTime}s`);
+                generateTimeDiv.textContent = `${genTime}s`;
+
+                const totalTime = ((genEnd - startTotal) / 1000).toFixed(1);
+
+                // Success!
+                const output = result[0].generated_text;
+                console.log(`[SUCCESS] Output: ${output}`);
+
+                resultDiv.textContent = `SUCCESS (${totalTime}s total)`;
+                resultDiv.className = 'success';
+                outputDiv.textContent = output;
+
+            } catch (error) {
+                // Failure
+                console.error('[ERROR]', error);
+                resultDiv.textContent = `FAILED: ${error.message}`;
+                resultDiv.className = 'error';
+                loadTimeDiv.textContent = '';
+                generateTimeDiv.textContent = '';
+                outputDiv.textContent = '';
+            }
+        });
+
+        // Auto-start if model is pre-filled (for automated testing)
+        window.addEventListener('load', () => {
+            if (modelNameInput.value.trim()) {
+                setTimeout(() => startTestBtn.click(), 100);
+            }
+        });
+    </script>
+</body>
+</html>

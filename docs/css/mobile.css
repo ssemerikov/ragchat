@@ -1,0 +1,218 @@
+/* Mobile responsive styles */
+
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    /* Sidebar - slide in/out on mobile */
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        margin: 0;
+        border-radius: 0;
+        z-index: 1000;
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    #sidebarToggle {
+        display: block;
+    }
+
+    /* Overlay when sidebar is open */
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        z-index: 999;
+    }
+
+    body.sidebar-open::before {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    /* Main content takes full width on mobile */
+    .main-content {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .mobile-only {
+        display: flex !important;
+    }
+
+    /* Header adjustments */
+    .chat-header {
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .chat-header h1 {
+        font-size: 18px;
+    }
+
+    .header-actions {
+        gap: 8px;
+    }
+
+    .btn-secondary span {
+        display: none; /* Hide text on mobile, show icon only */
+    }
+
+    .lang-text {
+        display: none;
+    }
+
+    /* Status indicator */
+    .status-indicator {
+        order: 10; /* Move to end */
+        width: 100%;
+        margin-top: 8px;
+        justify-content: center;
+    }
+
+    /* Messages */
+    .message-content {
+        max-width: 85%;
+    }
+
+    /* Chat input */
+    .chat-input-container {
+        padding: 15px;
+    }
+
+    #chatForm {
+        flex-direction: column;
+    }
+
+    #messageInput {
+        width: 100%;
+    }
+
+    #sendBtn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Settings panel */
+    .settings-panel {
+        padding: 12px 15px;
+    }
+
+    .settings-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .settings-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    /* Conversation list items */
+    .conversation-item {
+        padding: 10px 12px;
+    }
+
+    .conversation-title {
+        font-size: 13px;
+    }
+
+    .conversation-meta {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .chat-header h1 {
+        font-size: 16px;
+    }
+
+    .welcome-message {
+        padding: 20px 10px;
+    }
+
+    .welcome-message h2 {
+        font-size: 18px;
+    }
+
+    .message-content {
+        max-width: 90%;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .btn-icon {
+        padding: 6px;
+    }
+}
+
+/* Landscape mode on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .main-content {
+        height: 100vh;
+    }
+
+    .welcome-message {
+        padding: 20px 10px;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    :root {
+        --sidebar-width: 240px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .message-content {
+        max-width: 80%;
+    }
+}
+
+/* Touch device improvements */
+@media (hover: none) and (pointer: coarse) {
+    /* Larger touch targets */
+    .btn {
+        min-height: 44px;
+    }
+
+    .btn-icon {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .conversation-item {
+        min-height: 44px;
+    }
+
+    /* Remove hover effects on touch devices */
+    .btn-copy:hover {
+        background: none;
+    }
+
+    /* Show copy button always on touch */
+    .btn-copy {
+        opacity: 1;
+    }
+}

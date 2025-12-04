@@ -1,0 +1,756 @@
+127.0.0.1 - - [03/Dec/2025 23:59:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [03/Dec/2025 23:59:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:32] "GET /clear_cache.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:32] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 00:01:32] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /css/main.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /css/mobile.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /js/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /css/sidebar.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /js/ai/promptBuilder.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /js/storage/conversationManager.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /js/ui/chatUI.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /js/storage/localStorageManager.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /js/utils/fileHandler.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /js/ai/modelManager.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /js/ui/settingsUI.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /js/ui/sidebarUI.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /js/i18n/translations.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /js/ui/languageUI.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /js/utils/uuid.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:01:44] "GET /js/utils/clipboard.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:03:42] "GET /clear_cache.html HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 00:03:48] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 00:05:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:05:08] "GET /js/app.js?v=1733263200 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:05:20] "GET /js/app.js?v=1733263200 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:05:43] "GET /js/ui/settingsUI.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:05:43] "GET /js/storage/conversationManager.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:06:04] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 00:06:04] "GET /js/app.js?v=1733263200 HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 00:06:04] "GET /js/ai/modelManager.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 00:06:04] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 00:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 00:15:57] "GET /test_all_models.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 00:15:57] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 00:15:57] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 08:23:45] "GET /test_all_models.html HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 08:23:45] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 08:23:45] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 08:31:16] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 08:31:16] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 08:39:34] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 08:39:34] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:12:13] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:12:15] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:12:15] "GET /models/Xenova/pythia-14m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:12:15] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:12:15] "GET /models/Xenova/pythia-14m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:12:15] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:12:15] "GET /models/Xenova/pythia-14m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:12:21] "HEAD /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:12:38] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:12:39] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:12:39] "GET /models/Xenova/pythia-14m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:12:39] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:12:39] "GET /models/Xenova/pythia-14m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:12:39] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:12:39] "GET /models/Xenova/pythia-14m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:12:39] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:12:39] "GET /models/Xenova/pythia-14m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:12:39] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:12:39] "GET /models/Xenova/pythia-14m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:13:09] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:13:09] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:13:09] "GET /models/Xenova/pythia-14m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:13:09] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:13:09] "GET /models/Xenova/pythia-14m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:13:09] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:13:09] "GET /models/Xenova/pythia-14m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:13:10] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:13:10] "GET /models/Xenova/pythia-14m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:13:10] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:13:10] "GET /models/Xenova/pythia-14m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:16:18] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:16:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:16:19] "GET /models/Xenova/pythia-14m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:16:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:16:19] "GET /models/Xenova/pythia-14m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:16:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:16:19] "GET /models/Xenova/pythia-14m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:16:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:16:19] "GET /models/Xenova/pythia-14m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:16:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:16:19] "GET /models/Xenova/pythia-14m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:07] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:17:08] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:08] "GET /models/Xenova/pythia-14m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:08] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:08] "GET /models/Xenova/pythia-14m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:08] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:08] "GET /models/Xenova/pythia-14m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:08] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:08] "GET /models/Xenova/pythia-14m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:08] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:08] "GET /models/Xenova/pythia-14m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:19] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:17:20] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:20] "GET /models/Xenova/llama2.c-stories15M/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:20] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:20] "GET /models/Xenova/llama2.c-stories15M/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:20] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:20] "GET /models/Xenova/llama2.c-stories15M/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:20] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:20] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:20] "GET /models/Xenova/llama2.c-stories15M/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:20] "GET /models/Xenova/llama2.c-stories15M/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:30] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:17:31] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:31] "GET /models/Xenova/distilgpt2/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:31] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:31] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:31] "GET /models/Xenova/distilgpt2/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:31] "GET /models/Xenova/distilgpt2/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:31] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:31] "GET /models/Xenova/distilgpt2/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:31] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:31] "GET /models/Xenova/distilgpt2/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:57] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:17:58] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:58] "GET /models/Xenova/llama2.c-stories110M/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:58] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:58] "GET /models/Xenova/llama2.c-stories110M/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:58] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:58] "GET /models/Xenova/llama2.c-stories110M/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:58] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:58] "GET /models/Xenova/llama2.c-stories110M/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:17:58] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:17:58] "GET /models/Xenova/llama2.c-stories110M/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:18:20] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:18:21] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:18:21] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:18:21] "GET /models/Xenova/Qwen1.5-0.5B-Chat/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:18:21] "GET /models/Xenova/Qwen1.5-0.5B-Chat/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:18:21] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:18:21] "GET /models/Xenova/Qwen1.5-0.5B-Chat/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:18:21] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:18:21] "GET /models/Xenova/Qwen1.5-0.5B-Chat/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:18:21] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:18:21] "GET /models/Xenova/Qwen1.5-0.5B-Chat/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:19:13] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:19:14] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:19:14] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:19:14] "GET /models/Xenova/TinyLlama-1.1B-Chat-v1.0/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:19:14] "GET /models/Xenova/TinyLlama-1.1B-Chat-v1.0/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:19:14] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:19:14] "GET /models/Xenova/TinyLlama-1.1B-Chat-v1.0/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:19:14] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:19:14] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:19:14] "GET /models/Xenova/TinyLlama-1.1B-Chat-v1.0/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:19:14] "GET /models/Xenova/TinyLlama-1.1B-Chat-v1.0/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:21:03] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:21:04] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:21:04] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:21:04] "GET /models/Xenova/Qwen1.5-1.8B-Chat/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:21:04] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:21:04] "GET /models/Xenova/Qwen1.5-1.8B-Chat/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:21:04] "GET /models/Xenova/Qwen1.5-1.8B-Chat/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:21:05] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:21:05] "GET /models/Xenova/Qwen1.5-1.8B-Chat/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:21:05] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:21:05] "GET /models/Xenova/Qwen1.5-1.8B-Chat/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:06] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:23:07] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:07] "GET /models/Xenova/LaMini-GPT-124M/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:07] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:07] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:07] "GET /models/Xenova/LaMini-GPT-124M/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:07] "GET /models/Xenova/LaMini-GPT-124M/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:07] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:07] "GET /models/Xenova/LaMini-GPT-124M/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:07] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:07] "GET /models/Xenova/LaMini-GPT-124M/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:30] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:23:30] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:30] "GET /models/Xenova/LaMini-Neo-125M/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:30] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:30] "GET /models/Xenova/LaMini-Neo-125M/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:30] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:30] "GET /models/Xenova/LaMini-Neo-125M/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:31] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:31] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:31] "GET /models/Xenova/LaMini-Neo-125M/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:31] "GET /models/Xenova/LaMini-Neo-125M/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:52] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:23:53] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:53] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:53] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:53] "GET /models/Xenova/LaMini-Cerebras-256M/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:53] "GET /models/Xenova/LaMini-Cerebras-256M/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:53] "GET /models/Xenova/LaMini-Cerebras-256M/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:53] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:53] "GET /models/Xenova/LaMini-Cerebras-256M/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:23:53] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:23:53] "GET /models/Xenova/LaMini-Cerebras-256M/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:24:28] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:24:28] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:24:28] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:24:28] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:24:28] "GET /models/Xenova/LaMini-GPT-774M/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:24:28] "GET /models/Xenova/LaMini-GPT-774M/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:24:28] "GET /models/Xenova/LaMini-GPT-774M/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:24:29] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:24:29] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:24:29] "GET /models/Xenova/LaMini-GPT-774M/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:24:29] "GET /models/Xenova/LaMini-GPT-774M/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:25:53] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:25:54] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:25:54] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:25:54] "GET /models/Xenova/gpt-neo-125M/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:25:54] "GET /models/Xenova/gpt-neo-125M/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:25:54] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:25:54] "GET /models/Xenova/gpt-neo-125M/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:25:54] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:25:54] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:25:54] "GET /models/Xenova/gpt-neo-125M/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:25:54] "GET /models/Xenova/gpt-neo-125M/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:26:15] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:26:16] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:26:16] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:26:16] "GET /models/Xenova/gpt2/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:26:16] "GET /models/Xenova/gpt2/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:26:16] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:26:16] "GET /models/Xenova/gpt2/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:26:16] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:26:16] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:26:16] "GET /models/Xenova/gpt2/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:26:16] "GET /models/Xenova/gpt2/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:26:36] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:26:37] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:26:37] "GET /models/Xenova/llama-160m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:26:37] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:26:37] "GET /models/Xenova/llama-160m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:26:37] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:26:37] "GET /models/Xenova/llama-160m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:26:37] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:26:37] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:26:37] "GET /models/Xenova/llama-160m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:26:37] "GET /models/Xenova/llama-160m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:27:00] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:27:00] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:27:00] "GET /models/Xenova/stablelm-2-zephyr-1_6b/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:27:00] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:27:00] "GET /models/Xenova/stablelm-2-zephyr-1_6b/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:27:00] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:27:00] "GET /models/Xenova/stablelm-2-zephyr-1_6b/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:27:01] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:27:01] "GET /models/Xenova/stablelm-2-zephyr-1_6b/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:27:01] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:27:01] "GET /models/Xenova/stablelm-2-zephyr-1_6b/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:29:03] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:29:04] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:29:04] "GET /models/Xenova/codegen-350M-mono/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:29:04] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:29:04] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:29:04] "GET /models/Xenova/codegen-350M-mono/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:29:04] "GET /models/Xenova/codegen-350M-mono/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:29:04] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:29:04] "GET /models/Xenova/codegen-350M-mono/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:29:04] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:29:04] "GET /models/Xenova/codegen-350M-mono/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:29:55] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:29:55] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:29:55] "GET /models/Xenova/tiny_starcoder_py/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:29:55] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:29:55] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:29:55] "GET /models/Xenova/tiny_starcoder_py/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:29:55] "GET /models/Xenova/tiny_starcoder_py/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:29:56] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:29:56] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:29:56] "GET /models/Xenova/tiny_starcoder_py/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:29:56] "GET /models/Xenova/tiny_starcoder_py/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:30:34] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:30:34] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:30:34] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:30:34] "GET /models/Xenova/WizardCoder-1B-V1.0/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:30:34] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:30:34] "GET /models/Xenova/WizardCoder-1B-V1.0/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:30:34] "GET /models/Xenova/WizardCoder-1B-V1.0/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:30:35] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:30:35] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:30:35] "GET /models/Xenova/WizardCoder-1B-V1.0/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:30:35] "GET /models/Xenova/WizardCoder-1B-V1.0/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:32:37] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:32:37] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:32:37] "GET /models/Xenova/deepseek-coder-1.3b-instruct/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:32:37] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:32:37] "GET /models/Xenova/deepseek-coder-1.3b-instruct/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:32:37] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:32:37] "GET /models/Xenova/deepseek-coder-1.3b-instruct/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:32:38] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:32:38] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:32:38] "GET /models/Xenova/deepseek-coder-1.3b-instruct/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:32:38] "GET /models/Xenova/deepseek-coder-1.3b-instruct/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:34:40] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:34:41] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:34:41] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:34:41] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:34:41] "GET /models/Xenova/opt-125m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:34:41] "GET /models/Xenova/opt-125m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:34:41] "GET /models/Xenova/opt-125m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:34:41] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:34:41] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:34:41] "GET /models/Xenova/opt-125m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:34:41] "GET /models/Xenova/opt-125m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:35:01] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:35:02] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:35:02] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:35:02] "GET /models/Xenova/opt-350m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:35:02] "GET /models/Xenova/opt-350m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:35:02] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:35:02] "GET /models/Xenova/opt-350m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:35:03] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:35:03] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:35:03] "GET /models/Xenova/opt-350m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:35:03] "GET /models/Xenova/opt-350m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:35:42] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:35:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:35:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:35:43] "GET /models/Xenova/pythia-410m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:35:43] "GET /models/Xenova/pythia-410m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:35:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:35:43] "GET /models/Xenova/pythia-410m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:35:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:35:43] "GET /models/Xenova/pythia-410m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:35:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:35:43] "GET /models/Xenova/pythia-410m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:36:34] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:36:35] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:36:35] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:36:35] "GET /models/Xenova/bloomz-560m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:36:35] "GET /models/Xenova/bloomz-560m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:36:35] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:36:35] "GET /models/Xenova/bloomz-560m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:36:35] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:36:35] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:36:35] "GET /models/Xenova/bloomz-560m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:36:35] "GET /models/Xenova/bloomz-560m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:37:55] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:37:56] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:37:56] "GET /models/Xenova/bloom-560m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:37:56] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:37:56] "GET /models/Xenova/bloom-560m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:37:56] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:37:56] "GET /models/Xenova/bloom-560m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:37:56] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:37:56] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:37:56] "GET /models/Xenova/bloom-560m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:37:56] "GET /models/Xenova/bloom-560m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:39:17] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:39:18] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:39:18] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:39:18] "GET /models/Xenova/phi-1_5_dev/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:39:18] "GET /models/Xenova/phi-1_5_dev/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:39:18] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:39:18] "GET /models/Xenova/phi-1_5_dev/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:39:18] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:39:18] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:39:18] "GET /models/Xenova/phi-1_5_dev/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:39:18] "GET /models/Xenova/phi-1_5_dev/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:41:21] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:41:21] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:41:21] "GET /models/Xenova/pygmalion-350m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:41:21] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:41:21] "GET /models/Xenova/pygmalion-350m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:41:21] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:41:21] "GET /models/Xenova/pygmalion-350m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:41:22] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:41:22] "GET /models/Xenova/pygmalion-350m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:41:22] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:41:22] "GET /models/Xenova/pygmalion-350m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:42:03] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:42:03] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:42:03] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:42:03] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:42:03] "GET /models/Xenova/gpt2-large-conversational/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:42:03] "GET /models/Xenova/gpt2-large-conversational/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:42:03] "GET /models/Xenova/gpt2-large-conversational/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:42:04] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:42:04] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:42:04] "GET /models/Xenova/gpt2-large-conversational/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:42:04] "GET /models/Xenova/gpt2-large-conversational/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:43:48] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:43:48] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:43:48] "GET /models/Xenova/slovak-gpt-j-405M/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:43:48] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:43:48] "GET /models/Xenova/slovak-gpt-j-405M/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:43:48] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:43:48] "GET /models/Xenova/slovak-gpt-j-405M/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:43:49] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:43:49] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:43:49] "GET /models/Xenova/slovak-gpt-j-405M/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:43:49] "GET /models/Xenova/slovak-gpt-j-405M/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:44:42] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:44:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:44:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:44:43] "GET /models/Xenova/gpt-neo-romanian-125m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:44:43] "GET /models/Xenova/gpt-neo-romanian-125m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:44:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:44:43] "GET /models/Xenova/gpt-neo-romanian-125m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:44:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:44:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:44:43] "GET /models/Xenova/gpt-neo-romanian-125m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:44:43] "GET /models/Xenova/gpt-neo-romanian-125m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:45:10] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:45:10] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:45:10] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:45:10] "GET /models/Xenova/kogpt-j-350m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:45:10] "GET /models/Xenova/kogpt-j-350m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:45:10] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:45:10] "GET /models/Xenova/kogpt-j-350m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:45:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:45:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:45:11] "GET /models/Xenova/kogpt-j-350m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:45:11] "GET /models/Xenova/kogpt-j-350m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:46:00] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:46:01] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:46:01] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:46:01] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:46:01] "GET /models/Xenova/tamillama_tiny_30m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:46:01] "GET /models/Xenova/tamillama_tiny_30m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:46:01] "GET /models/Xenova/tamillama_tiny_30m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:46:02] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:46:02] "GET /models/Xenova/tamillama_tiny_30m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:46:02] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:46:02] "GET /models/Xenova/tamillama_tiny_30m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:46:13] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:46:14] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:46:14] "GET /models/Xenova/J-350M/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:46:14] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:46:14] "GET /models/Xenova/J-350M/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:46:14] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:46:14] "GET /models/Xenova/J-350M/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:46:14] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:46:14] "GET /models/Xenova/J-350M/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:46:14] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:46:14] "GET /models/Xenova/J-350M/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:02] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:47:02] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:02] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:02] "GET /models/Xenova/llama2.c-stories42M/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:02] "GET /models/Xenova/llama2.c-stories42M/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:02] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:02] "GET /models/Xenova/llama2.c-stories42M/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:06] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:06] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:06] "GET /models/Xenova/llama2.c-stories42M/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:06] "GET /models/Xenova/llama2.c-stories42M/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:18] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:47:18] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:18] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:18] "GET /models/Xenova/llama-68m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:18] "GET /models/Xenova/llama-68m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:18] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:18] "GET /models/Xenova/llama-68m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:19] "GET /models/Xenova/llama-68m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:19] "GET /models/Xenova/llama-68m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:31] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:47:32] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:32] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:32] "GET /models/Xenova/pythia-31m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:32] "GET /models/Xenova/pythia-31m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:32] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:32] "GET /models/Xenova/pythia-31m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:32] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:32] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:32] "GET /models/Xenova/pythia-31m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:32] "GET /models/Xenova/pythia-31m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:43] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:47:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:43] "GET /models/Xenova/pythia-70m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:43] "GET /models/Xenova/pythia-70m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:43] "GET /models/Xenova/pythia-70m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:43] "GET /models/Xenova/pythia-70m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:43] "GET /models/Xenova/pythia-70m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:58] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:47:59] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:59] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:59] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:59] "GET /models/Xenova/pythia-70m-deduped/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:59] "GET /models/Xenova/pythia-70m-deduped/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:59] "GET /models/Xenova/pythia-70m-deduped/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:59] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:59] "GET /models/Xenova/pythia-70m-deduped/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:47:59] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:47:59] "GET /models/Xenova/pythia-70m-deduped/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:48:14] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:48:15] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:48:15] "GET /models/Xenova/pythia-160m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:48:15] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:48:15] "GET /models/Xenova/pythia-160m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:48:15] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:48:15] "GET /models/Xenova/pythia-160m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:48:15] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:48:15] "GET /models/Xenova/pythia-160m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:48:15] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:48:15] "GET /models/Xenova/pythia-160m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:48:42] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:48:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:48:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:48:43] "GET /models/Xenova/pythia-160m-deduped/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:48:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:48:43] "GET /models/Xenova/pythia-160m-deduped/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:48:43] "GET /models/Xenova/pythia-160m-deduped/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:48:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:48:43] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:48:43] "GET /models/Xenova/pythia-160m-deduped/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:48:43] "GET /models/Xenova/pythia-160m-deduped/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:49:10] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:49:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:49:11] "GET /models/Xenova/pythia-410m-deduped/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:49:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:49:11] "GET /models/Xenova/pythia-410m-deduped/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:49:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:49:11] "GET /models/Xenova/pythia-410m-deduped/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:49:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:49:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:49:11] "GET /models/Xenova/pythia-410m-deduped/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:49:11] "GET /models/Xenova/pythia-410m-deduped/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:50:10] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:50:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:50:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:50:11] "GET /models/Xenova/codegen-350M-multi/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:50:11] "GET /models/Xenova/codegen-350M-multi/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:50:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:50:11] "GET /models/Xenova/codegen-350M-multi/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:50:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:50:11] "GET /models/Xenova/codegen-350M-multi/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:50:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:50:11] "GET /models/Xenova/codegen-350M-multi/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:51:05] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:51:06] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:51:06] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:51:06] "GET /models/Xenova/codegen-350M-nl/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:51:06] "GET /models/Xenova/codegen-350M-nl/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:51:06] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:51:06] "GET /models/Xenova/codegen-350M-nl/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:51:06] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:51:06] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:51:06] "GET /models/Xenova/codegen-350M-nl/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:51:06] "GET /models/Xenova/codegen-350M-nl/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:52:10] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:52:10] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:52:10] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:52:10] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:52:10] "GET /models/Xenova/starcoderbase-1b/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:52:10] "GET /models/Xenova/starcoderbase-1b/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:52:10] "GET /models/Xenova/starcoderbase-1b/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:52:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:52:11] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:52:11] "GET /models/Xenova/starcoderbase-1b/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:52:11] "GET /models/Xenova/starcoderbase-1b/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:54:14] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:54:14] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:54:14] "GET /models/Xenova/starcoderbase-1b-sft/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:54:14] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:54:14] "GET /models/Xenova/starcoderbase-1b-sft/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:54:14] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:54:14] "GET /models/Xenova/starcoderbase-1b-sft/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:54:15] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:54:15] "GET /models/Xenova/starcoderbase-1b-sft/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:54:15] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:54:15] "GET /models/Xenova/starcoderbase-1b-sft/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:56:18] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:56:18] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:56:18] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:56:18] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:56:18] "GET /models/Xenova/deepseek-coder-1.3b-base/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:56:18] "GET /models/Xenova/deepseek-coder-1.3b-base/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:56:18] "GET /models/Xenova/deepseek-coder-1.3b-base/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:56:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:56:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:56:19] "GET /models/Xenova/deepseek-coder-1.3b-base/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:56:19] "GET /models/Xenova/deepseek-coder-1.3b-base/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:58:22] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:58:23] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:58:23] "GET /models/Xenova/LaMini-Cerebras-111M/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:58:23] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:58:23] "GET /models/Xenova/LaMini-Cerebras-111M/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:58:23] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:58:23] "GET /models/Xenova/LaMini-Cerebras-111M/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:58:24] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:58:24] "GET /models/Xenova/LaMini-Cerebras-111M/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:58:24] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:58:24] "GET /models/Xenova/LaMini-Cerebras-111M/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:58:54] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 09:58:55] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:58:55] "GET /models/Xenova/LaMini-Cerebras-590M/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:58:55] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:58:55] "GET /models/Xenova/LaMini-Cerebras-590M/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:58:55] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:58:55] "GET /models/Xenova/LaMini-Cerebras-590M/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:58:56] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:58:56] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 09:58:56] "GET /models/Xenova/LaMini-Cerebras-590M/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 09:58:56] "GET /models/Xenova/LaMini-Cerebras-590M/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:00:18] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:00:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:00:19] "GET /models/Xenova/falcon-rw-1b/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:00:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:00:19] "GET /models/Xenova/falcon-rw-1b/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:00:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:00:19] "GET /models/Xenova/falcon-rw-1b/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:00:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:00:19] "GET /models/Xenova/falcon-rw-1b/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:00:19] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:00:19] "GET /models/Xenova/falcon-rw-1b/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:23] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:02:23] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:23] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:23] "GET /models/Xenova/tiny-random-falcon-7b/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:23] "GET /models/Xenova/tiny-random-falcon-7b/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:23] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:23] "GET /models/Xenova/tiny-random-falcon-7b/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:24] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:24] "GET /models/Xenova/tiny-random-falcon-7b/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:24] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:24] "GET /models/Xenova/tiny-random-falcon-7b/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:49] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:02:50] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:50] "GET /models/Xenova/really-tiny-falcon-testing/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:50] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:50] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:50] "GET /models/Xenova/really-tiny-falcon-testing/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:50] "GET /models/Xenova/really-tiny-falcon-testing/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:50] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:50] "GET /models/Xenova/really-tiny-falcon-testing/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:50] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:50] "GET /models/Xenova/really-tiny-falcon-testing/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:58] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:02:59] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:59] "GET /models/Xenova/TinyLLama-v0/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:59] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:59] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:59] "GET /models/Xenova/TinyLLama-v0/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:59] "GET /models/Xenova/TinyLLama-v0/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:59] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:59] "GET /models/Xenova/TinyLLama-v0/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:02:59] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:02:59] "GET /models/Xenova/TinyLLama-v0/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:03:08] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:03:08] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:03:08] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:03:08] "GET /models/Xenova/LiteLlama-460M-1T/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:03:08] "GET /models/Xenova/LiteLlama-460M-1T/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:03:08] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:03:08] "GET /models/Xenova/LiteLlama-460M-1T/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:03:09] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:03:09] "GET /models/Xenova/LiteLlama-460M-1T/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:03:09] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:03:09] "GET /models/Xenova/LiteLlama-460M-1T/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:04:11] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:04:12] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:04:12] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:04:12] "GET /models/Xenova/stablelm-2-1_6b/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:04:12] "GET /models/Xenova/stablelm-2-1_6b/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:04:12] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:04:12] "GET /models/Xenova/stablelm-2-1_6b/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:04:13] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:04:13] "GET /models/Xenova/stablelm-2-1_6b/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:04:13] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:04:13] "GET /models/Xenova/stablelm-2-1_6b/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:06:16] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:06:17] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:06:17] "GET /models/Xenova/tiny-random-StableLmForCausalLM/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:06:17] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:06:17] "GET /models/Xenova/tiny-random-StableLmForCausalLM/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:06:17] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:06:17] "GET /models/Xenova/tiny-random-StableLmForCausalLM/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:06:18] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:06:18] "GET /models/Xenova/tiny-random-StableLmForCausalLM/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:06:18] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:06:18] "GET /models/Xenova/tiny-random-StableLmForCausalLM/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:06:24] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:06:25] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:06:25] "GET /models/Xenova/Qwen1.5-0.5B/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:06:25] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:06:25] "GET /models/Xenova/Qwen1.5-0.5B/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:06:25] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:06:25] "GET /models/Xenova/Qwen1.5-0.5B/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:06:25] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:06:25] "GET /models/Xenova/Qwen1.5-0.5B/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:06:25] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:06:25] "GET /models/Xenova/Qwen1.5-0.5B/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:07:40] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:07:40] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:07:40] "GET /models/Xenova/Qwen1.5-1.8B/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:07:40] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:07:40] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:07:40] "GET /models/Xenova/Qwen1.5-1.8B/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:07:40] "GET /models/Xenova/Qwen1.5-1.8B/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:07:41] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:07:41] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:07:41] "GET /models/Xenova/Qwen1.5-1.8B/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:07:41] "GET /models/Xenova/Qwen1.5-1.8B/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:44] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:09:44] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:44] "GET /models/Xenova/tiny-random-mistral/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:44] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:44] "GET /models/Xenova/tiny-random-mistral/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:44] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:44] "GET /models/Xenova/tiny-random-mistral/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:45] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:45] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:45] "GET /models/Xenova/tiny-random-mistral/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:45] "GET /models/Xenova/tiny-random-mistral/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:50] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:09:51] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:51] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:51] "GET /models/Xenova/tiny-random-PhiForCausalLM/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:51] "GET /models/Xenova/tiny-random-PhiForCausalLM/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:51] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:51] "GET /models/Xenova/tiny-random-PhiForCausalLM/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:51] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:51] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:51] "GET /models/Xenova/tiny-random-PhiForCausalLM/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:51] "GET /models/Xenova/tiny-random-PhiForCausalLM/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:56] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:09:56] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:56] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:56] "GET /models/Xenova/tiny-random-Starcoder2ForCausalLM/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:56] "GET /models/Xenova/tiny-random-Starcoder2ForCausalLM/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:56] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:56] "GET /models/Xenova/tiny-random-Starcoder2ForCausalLM/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:57] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:57] "GET /models/Xenova/tiny-random-Starcoder2ForCausalLM/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:09:57] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:09:57] "GET /models/Xenova/tiny-random-Starcoder2ForCausalLM/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:10:02] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:10:02] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:10:02] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:10:02] "GET /models/Xenova/ipt-350m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:10:02] "GET /models/Xenova/ipt-350m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:10:02] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:10:02] "GET /models/Xenova/ipt-350m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:10:03] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:10:03] "GET /models/Xenova/ipt-350m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:10:03] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:10:03] "GET /models/Xenova/ipt-350m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:10:53] "GET /test_single_model.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 10:10:54] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:10:54] "GET /models/Xenova/dlite-v2-774m/tokenizer_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:10:54] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:10:54] "GET /models/Xenova/dlite-v2-774m/tokenizer.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:10:54] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:10:54] "GET /models/Xenova/dlite-v2-774m/config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:10:54] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:10:54] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 10:10:54] "GET /models/Xenova/dlite-v2-774m/generation_config.json HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 10:10:54] "GET /models/Xenova/dlite-v2-774m/onnx/decoder_model_merged_quantized.onnx HTTP/1.1" 404 -
