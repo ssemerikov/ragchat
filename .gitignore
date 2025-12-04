@@ -1,0 +1,24 @@
+# Node modules cache
+node_modules/.cache/
+**/node_modules/.cache/
+
+# Transformer models cache
+preprocessing/node_modules/@xenova/transformers/.cache/
+
+# Large model files
+*.onnx
+
+# Node modules (optional - already committed)
+# node_modules/
+
+# Environment files
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

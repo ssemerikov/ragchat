@@ -1,0 +1,36 @@
+{
+  "name": "kdpu-rag-preprocessing",
+  "version": "1.0.0",
+  "description": "Pre-processing scripts for KDPU RAG system - downloads, extracts, chunks, and embeds all university documents",
+  "type": "module",
+  "scripts": {
+    "download": "node download_documents.js",
+    "extract": "node extract_text.js",
+    "chunk": "node chunk_text.js",
+    "embed": "node generate_embeddings.js",
+    "categories": "node generate_categories.js",
+    "process-all": "node run_pipeline.js",
+    "copy-to-app": "npm run copy-embeddings && npm run copy-documents && npm run copy-categories",
+    "copy-embeddings": "cp ./output/embeddings.json.gz ../docs/js/data/embeddings.json.gz",
+    "copy-documents": "cp ./metadata/extracted_documents.json ../docs/js/data/documents.json",
+    "copy-categories": "cp ./output/categories.json ../docs/js/data/categories.json"
+  },
+  "dependencies": {
+    "@xenova/transformers": "^2.17.0",
+    "cheerio": "^1.0.0-rc.12",
+    "jsdom": "^24.0.0",
+    "mammoth": "^1.7.0",
+    "node-fetch": "^3.3.2",
+    "pako": "^2.1.0",
+    "pdfjs-dist": "^4.0.0"
+  },
+  "keywords": [
+    "rag",
+    "embeddings",
+    "nlp",
+    "transformers",
+    "document-processing"
+  ],
+  "author": "",
+  "license": "MIT"
+}

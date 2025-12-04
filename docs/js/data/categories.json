@@ -1,0 +1,115 @@
+{
+  "version": "1.0",
+  "generated_at": "2025-12-04T19:44:02.244Z",
+  "total_categories": 12,
+  "categories": [
+    {
+      "id": "general_operations",
+      "name_uk": "Загальна діяльність",
+      "name_en": "General Operations",
+      "icon": "📋",
+      "description_uk": "Статут університету, колективний договір, програма розвитку",
+      "description_en": "University charter, collective agreement, development program",
+      "document_count": 0
+    },
+    {
+      "id": "anti_corruption",
+      "name_uk": "Антикорупційна діяльність",
+      "name_en": "Anti-Corruption Activities",
+      "icon": "🛡️",
+      "description_uk": "Програми запобігання корупції, реєстр ризиків",
+      "description_en": "Corruption prevention programs, risk register",
+      "document_count": 0
+    },
+    {
+      "id": "academic_council",
+      "name_uk": "Вчена рада",
+      "name_en": "Academic Council",
+      "icon": "🎓",
+      "description_uk": "Положення про вчену раду та постійні комісії",
+      "description_en": "Regulations for academic council and commissions",
+      "document_count": 0
+    },
+    {
+      "id": "structural_divisions",
+      "name_uk": "Структурні підрозділи",
+      "name_en": "Structural Divisions",
+      "icon": "🏛️",
+      "description_uk": "Положення про факультети та кафедри",
+      "description_en": "Provisions for faculties and departments",
+      "document_count": 0
+    },
+    {
+      "id": "educational_process",
+      "name_uk": "Освітній процес",
+      "name_en": "Educational Process",
+      "icon": "📚",
+      "description_uk": "Організація навчального процесу, академічна доброчесність",
+      "description_en": "Educational process organization, academic integrity",
+      "document_count": 0
+    },
+    {
+      "id": "scientific_work",
+      "name_uk": "Наукова робота",
+      "name_en": "Scientific Work",
+      "icon": "🔬",
+      "description_uk": "Наукова діяльність, публікації, дослідження",
+      "description_en": "Scientific activities, publications, research",
+      "document_count": 0
+    },
+    {
+      "id": "financial_activities",
+      "name_uk": "Фінансова діяльність",
+      "name_en": "Financial Activities",
+      "icon": "💰",
+      "description_uk": "Публічні закупівлі, платні послуги",
+      "description_en": "Public procurement, paid services",
+      "document_count": 0
+    },
+    {
+      "id": "information_activities",
+      "name_uk": "Інформаційна діяльність",
+      "name_en": "Information Activities",
+      "icon": "📱",
+      "description_uk": "Управління веб-сайтом, прес-центр",
+      "description_en": "Website management, press center",
+      "document_count": 0
+    },
+    {
+      "id": "social_civic",
+      "name_uk": "Соціально-виховна діяльність",
+      "name_en": "Social-Civic Activities",
+      "icon": "🤝",
+      "description_uk": "Підтримка студентів, гендерна освіта, мовні центри",
+      "description_en": "Student support, gender education, language centers",
+      "document_count": 0
+    },
+    {
+      "id": "dormitories",
+      "name_uk": "Гуртожитки",
+      "name_en": "Dormitories",
+      "icon": "🏠",
+      "description_uk": "Положення про гуртожитки, правила внутрішнього розпорядку",
+      "description_en": "Dormitory regulations, internal rules",
+      "document_count": 0
+    },
+    {
+      "id": "hr_management",
+      "name_uk": "Кадрові питання",
+      "name_en": "Personnel Issues",
+      "icon": "👥",
+      "description_uk": "Прийом на роботу, облік робочого часу",
+      "description_en": "Hiring procedures, work time accounting",
+      "document_count": 0
+    },
+    {
+      "id": "safety",
+      "name_uk": "Охорона праці",
+      "name_en": "Occupational Safety",
+      "icon": "⚠️",
+      "description_uk": "Програми навчання з охорони праці, процедури безпеки",
+      "description_en": "Safety training programs, emergency procedures",
+      "document_count": 0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "generated_at": "2025-12-04T19:44:02.211Z",
+  "model": "Xenova/multilingual-e5-base",
+  "embedding_dim": 768,
+  "total_chunks": 0,
+  "config": {
+    "target_tokens": 250,
+    "overlap_tokens": 50,
+    "min_chunk_tokens": 100
+  },
+  "chunks": []
+}
