@@ -101,6 +101,9 @@ class DocumentDownloader {
             const categoryDir = path.join(OUTPUT_DIR, category.id);
             await fs.mkdir(categoryDir, { recursive: true });
         }
+
+        // Also create uncategorized folder as fallback
+        await fs.mkdir(path.join(OUTPUT_DIR, 'uncategorized'), { recursive: true });
     }
 
     /**
@@ -232,11 +235,33 @@ class DocumentDownloader {
 
         // Handle Google Drive links specially
         if (type === 'google_drive') {
-            console.log(`Google Drive file: ${url}`);
-            console.log('Note: Google Drive files require manual download or API access');
-            // Store metadata but mark as needs_download
-            this.addToMetadata(docLink, filename, filepath, false);
-            return;
+            try {
+                const downloadUrl = this.getGoogleDriveDirectLink(url);
+                console.log(`Downloading from Google Drive: ${downloadUrl}`);
+
+                const response = await fetch(downloadUrl, {
+                    redirect: 'follow',
+                    headers: {
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+
+                const arrayBuffer = await response.arrayBuffer();
+                const buffer = Buffer.from(arrayBuffer);
+                await fs.writeFile(filepath, buffer);
+
+                console.log(`Saved: ${filename} (${(buffer.length / 1024).toFixed(2)} KB)`);
+                this.addToMetadata(docLink, filename, filepath, true);
+                return;
+            } catch (error) {
+                console.error(`Google Drive download failed: ${error.message}`);
+                this.addToMetadata(docLink, filename, filepath, false, error.message);
+                throw error;
+            }
         }
 
         // Download file
@@ -248,7 +273,8 @@ class DocumentDownloader {
                 throw new Error(`HTTP ${response.status}`);
             }
 
-            const buffer = await response.buffer();
+            const arrayBuffer = await response.arrayBuffer();
+            const buffer = Buffer.from(arrayBuffer);
             await fs.writeFile(filepath, buffer);
 
             console.log(`Saved: ${filename} (${(buffer.length / 1024).toFixed(2)} KB)`);
@@ -259,6 +285,43 @@ class DocumentDownloader {
             this.addToMetadata(docLink, filename, filepath, false, error.message);
             throw error;
         }
+    }
+
+    /**
+     * Extract Google Drive file ID and return direct download link
+     */
+    getGoogleDriveDirectLink(url) {
+        // Extract file ID from various Google Drive URL formats
+        let fileId = null;
+
+        // Format: https://drive.google.com/file/d/{FILE_ID}/view
+        let match = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
+        if (match) {
+            fileId = match[1];
+        }
+
+        // Format: https://drive.google.com/open?id={FILE_ID}
+        if (!fileId) {
+            match = url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+            if (match) {
+                fileId = match[1];
+            }
+        }
+
+        // Format: https://docs.google.com/forms/...
+        if (!fileId) {
+            match = url.match(/\/forms\/d\/([a-zA-Z0-9_-]+)/);
+            if (match) {
+                fileId = match[1];
+            }
+        }
+
+        if (!fileId) {
+            throw new Error(`Could not extract file ID from URL: ${url}`);
+        }
+
+        // Return direct download link
+        return `https://drive.google.com/uc?export=download&id=${fileId}`;
     }
 
     /**
